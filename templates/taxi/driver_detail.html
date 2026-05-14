@@ -2,7 +2,7 @@
 
 {% block content %}
   <h4>{{ driver.username }}</h4>
-  {% if driver.cars %}
+  {% if driver.cars.all %}
     {% for car in driver.cars.all %}
       <ul>
         <li>
